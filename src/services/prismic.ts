@@ -7,7 +7,8 @@ export interface PrismicConfig {
 }
 
 export function getPrismicClient(config: PrismicConfig): prismic.Client {
-  const client = prismic.createClient(process.env.PRISMIC_API_ENDPOINT);
+  const endpoint = prismic.getRepositoryEndpoint('spacetraveling1321312');
+  const client = prismic.createClient(endpoint);
 
   // enableAutoPreviews({
   //   client,

@@ -10,5 +10,30 @@
   "linked_documents": [],
   "lang": "en-us",
   "alternate_languages": [],
-  "data": {}
+  "data": {
+    "title": "other",
+    "subtitle": "clothing",
+    "author": "seat",
+    "banner": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+    },
+    "content": [
+      {
+        "heading": "toward",
+        "body": [
+          {
+            "type": "paragraph",
+            "text": "Labore in irure quis consequat et nisi nulla anim non. Excepteur anim eiusmod voluptate cupidatat sit aliquip culpa elit tempor officia.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
 }

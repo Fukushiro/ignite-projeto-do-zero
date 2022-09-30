@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next';
 import Header from '../components/Header';
+import { PostCard } from '../components/PostCard';
 
 import { getPrismicClient } from '../services/prismic';
 
@@ -31,15 +32,24 @@ export default function Home() {
       <div className={styles.content}>
         <Header />
 
-        <div></div>
+        <div className={styles.cards}>
+          {/* card */}
+
+          <PostCard title="Titulo" />
+        </div>
       </div>
     </main>
   );
 }
 
-// export const getStaticProps = async () => {
-//   // const prismic = getPrismicClient({});
-//   // const postsResponse = await prismic.getByType(TODO);
+export const getStaticProps: GetStaticProps = async () => {
+  const prismic = getPrismicClient({});
+  const postsResponse = await prismic.getByType('posts');
 
-//   // TODO
-// };
+  console.log(postsResponse.results);
+
+  return {
+    props: {},
+    revalidate: 60,
+  };
+};

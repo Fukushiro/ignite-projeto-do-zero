@@ -1,0 +1,42 @@
+.container {
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2.11rem;
+    text-align: justify;
+    font-family: 'Inter', Arial;
+  }
+  h2 {
+    color: #D7D7D7;
+    font-family: 'Inter', Arial;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+  }
+}
+
+.infos {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.time {
+  font-family: 'Inter', Arial;
+  font-weight: 400;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #BBBBBB;
+
+}
+.name {
+  font-family: 'Inter', Arial;
+  font-weight: 400;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #BBBBBB;
+}
