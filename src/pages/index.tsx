@@ -102,7 +102,7 @@ export const getStaticProps: GetStaticProps = async () => {
       postsPagination: {
         results: posts.map(v => ({
           uid: v?.uid,
-          first_publication_date: convertToString(v.first_publication_date),
+          first_publication_date: v.first_publication_date,
           data: {
             title: v.data.title,
             subtitle: v.data.subtitle,
