@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Post } from '../../pages';
 import styles from './postcard.module.scss';
+import { convertToString } from '../../utils/date';
 
 interface PostCardProps extends HTMLAttributes<HTMLDivElement> {
   post: Post;
@@ -24,7 +25,7 @@ export function PostCard({ post, ...rest }: PostCardProps) {
                 height={20}
                 color="white"
               />
-              <time>{post.first_publication_date}</time>
+              <time>{convertToString(post.first_publication_date)}</time>
             </div>
             <div className={styles.name}>
               <Image
