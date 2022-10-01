@@ -61,7 +61,7 @@ export default function Post({ post }: PostProps) {
               height={20}
               color="white"
             />
-            <time>{post.first_publication_date}</time>
+            <time>{convertToString(post.first_publication_date)}</time>
           </div>
           <div>
             <Image
