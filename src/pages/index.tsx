@@ -37,6 +37,7 @@ export default function Home({ postsPagination }: HomeProps) {
     setPosts(postsPagination.results);
     setNextPage(postsPagination.next_page ? postsPagination.next_page : '');
   }, [postsPagination.results]);
+  console.log(postsPagination);
 
   // handlers
   async function handlerLoadMorePosts() {
