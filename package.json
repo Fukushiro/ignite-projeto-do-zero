@@ -17,7 +17,7 @@
     "@prismicio/react": "^2.5.0",
     "@prismicio/slice-simulator-react": "^0.2.2",
     "@prismicio/types": "^0.1.27",
-    "date-fns": "^2.19.0",
+    "date-fns": "^2.29.3",
     "next": "10.0.7",
     "prismic-dom": "^2.2.5",
     "react": "17.0.1",

@@ -1,1 +1,68 @@
-// TODO
+.headerArea {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 79.5px;
+}
+.imageArea {
+
+}
+.content  {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 58px;
+  }
+  // margin: 79.50px 0px 0px 400px;
+  // background-color: red;
+//   display: flex;
+// flex-direction: column;
+// align-items: center;
+}
+.infos {
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 1.5rem;
+  div {
+    font-family: 'Inter', Arial;
+    font-weight: 400;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #BBBBBB;
+  }
+}
+
+
+.paragraph {
+  margin-bottom: 2rem;
+
+}
+.heading {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 140%;
+margin-bottom: 2rem;
+color: #F8F8F8;
+}
+.text {
+  color: #D7D7D7;
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.125rem;
+line-height: 140%;
+
+text-align: justify;
+
+}

@@ -2,10 +2,37 @@
 
 
 .content  {
-  margin: 79.50px 300px 0px 370px;
-
+  width: 70%;
+  margin-top: 79.5px;
+  margin-left: 30%;
+  // margin: 79.50px 0px 0px 400px;
+  // background-color: red;
+//   display: flex;
+// flex-direction: column;
+// align-items: center;
 
 }
 .cards {
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-bottom: 4rem;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: #FF57B2;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  &:hover {
+    text-decoration: underline;
+  }
 }
