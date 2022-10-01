@@ -9,18 +9,13 @@ import commonStyles from '../styles/common.module.scss';
 import { convertToString } from '../utils/date';
 import styles from './home.module.scss';
 
-export interface Post {
+interface Post {
   uid?: string;
   first_publication_date: string | null;
   data: {
     title: string;
     subtitle: string;
     author: string;
-    banner: {
-      // dimensions: { width: number; height: number };
-      url: string;
-    };
-    content: { heading: string; body: { type: string; text: string }[] }[];
   };
 }
 
@@ -106,9 +101,12 @@ export const getStaticProps: GetStaticProps = async () => {
       postsPagination: {
         results: posts.map(v => ({
           uid: v?.uid,
-          next_page: postsResponse.next_page,
           first_publication_date: convertToString(v.first_publication_date),
-          data: v.data,
+          data: {
+            title: v.data.title,
+            subtitle: v.data.subtitle,
+            author: v.data.author,
+          },
         })),
         next_page: postsResponse.next_page,
       },
