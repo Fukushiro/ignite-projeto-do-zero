@@ -125,9 +125,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post: {
         ...response,
-        first_publication_date: convertToString(
-          response.first_publication_date
-        ),
+        first_publication_date: response.first_publication_date,
 
         data: {
           ...response.data,
