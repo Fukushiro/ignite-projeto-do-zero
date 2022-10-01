@@ -17,7 +17,7 @@ export interface Post {
     subtitle: string;
     author: string;
     banner: {
-      dimensions: { width: number; height: number };
+      // dimensions: { width: number; height: number };
       url: string;
     };
     content: { heading: string; body: { type: string; text: string }[] }[];
@@ -105,8 +105,10 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       postsPagination: {
         results: posts.map(v => ({
-          ...v,
+          uid: v?.uid,
+          next_page: postsResponse.next_page,
           first_publication_date: convertToString(v.first_publication_date),
+          data: v.data,
         })),
         next_page: postsResponse.next_page,
       },

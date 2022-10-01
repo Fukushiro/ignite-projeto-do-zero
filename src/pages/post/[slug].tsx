@@ -13,7 +13,7 @@ interface Post {
   data: {
     title: string;
     banner: {
-      dimensions: { width: number; height: number };
+      // dimensions: { width: number; height: number };
       url: string;
     };
     author: string;
@@ -43,8 +43,8 @@ export default function Post({ post }: PostProps) {
         {post.data.banner.url && (
           <Image
             src={post.data.banner.url}
-            width={post.data.banner.dimensions.width}
-            height={post.data.banner.dimensions.height}
+            width={1440}
+            height={400}
             objectFit="cover"
             layout="responsive"
           />
