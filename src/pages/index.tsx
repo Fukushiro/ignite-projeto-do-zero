@@ -40,7 +40,7 @@ export default function Home({ postsPagination }: HomeProps) {
   // useEffect
   useEffect(() => {
     setPosts(postsPagination.results);
-    setNextPage(postsPagination.next_page);
+    setNextPage(postsPagination.next_page ? postsPagination.next_page : '');
   }, [postsPagination.results]);
 
   // handlers
