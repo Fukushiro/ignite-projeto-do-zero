@@ -5,7 +5,7 @@
 
 1. [next](https://nextjs.org/)
 2. [react](https://pt-br.reactjs.org/)
-3. [prismicio](prismicio)
+3. [prismicio](https://prismic.io/)
 4. [date-fns](https://date-fns.org/)
 
 
