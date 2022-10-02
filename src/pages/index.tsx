@@ -51,7 +51,7 @@ export default function Home({ postsPagination }: HomeProps) {
       ...posts,
       ...data.results.map(v => ({
         ...v,
-        first_publication_date: convertToString(v.first_publication_date),
+        first_publication_date: v.first_publication_date,
       })),
     ]);
     setNextPage(data.next_page === null ? '' : data.next_page);
